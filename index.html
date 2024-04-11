@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather-app_week3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="app">
+      <form id="city-form">
+        <input
+          type="text"
+          placeholder="Enter a city..."
+          id="city"
+          name="city"
+          required
+          autofocus
+          class="search-field"
+        />
+        <input type="submit" value="Search" class="search-button" />
+      </form>
+      <main>
+        <div class="current">
+          <div>
+            <h1 class="selected-city" id="displayed-city">Rome</h1>
+            <div class="weather-description">
+              <span id="datetime">Wednesday 23:19</span>
+              , broken clouds
+              <br />
+              Humidity: <strong>57%</strong>, Wind: <strong>8.75km/h</strong>
+            </div>
+          </div>
+
+          <div class="current-temperature">
+            🌧 <span class="temperature-value" id="temperature-value">17</span>
+            <span class="temperature-unit">°C</span>
+          </div>
+        </div>
+
+        <div class="days">
+          <div>
+            Sun 🌧
+            <br />
+            17°C 17°C
+          </div>
+          <div>
+            Mon 🌧
+            <br />
+            17°C 17°C
+          </div>
+          <div>
+            Tue 🌧
+            <br />
+            17°C 17°C
+          </div>
+          <div>
+            Wed 🌧
+            <br />
+            17°C 17°C
+          </div>
+          <div>
+            Thu 🌧
+            <br />
+            17°C 17°C
+          </div>
+        </div>
+      </main>
+      <div class="signature">
+        This project was coded by <a href="">Bero</a> and is open-sourced on
+        <a href="">GitHub</a> and hosted on <a href="">Netlify</a>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
